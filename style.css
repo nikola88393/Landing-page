@@ -19,7 +19,8 @@ ul {
     justify-content: space-around;
     align-items: center;
     background-color: #1F2937;
-    color: #F9FAF8
+    color: #F9FAF8;
+    flex-wrap: wrap;
 }
 
 .hero {
@@ -29,6 +30,7 @@ ul {
     color: #F9FAF8;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .main-text{
@@ -48,6 +50,7 @@ ul {
     border-radius: 8px;
     border: none;
     background-color: #3882F6;
+    cursor: pointer;
 }
 
 .text{
@@ -67,6 +70,9 @@ ul {
 /* infromation syling */
 h3 {
     text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
 }
 
 .columned {
@@ -77,13 +83,14 @@ h3 {
 .information{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     gap: 50px;
 }
 
 .information p{
-    height: 130px;
-    width: 130px;
+    height: 200px;
+    width: 200px;
     text-align: center;
     color:grey;
     font-size: 13px;
@@ -92,7 +99,86 @@ h3 {
 .box {
     border: solid #3882F6;
     border-radius: 8px;
-    height: 130px;
-    width: 130px;
+    height: 200px;
+    width: 200px;
 }
 /* quote section styling */
+.quote {
+    background-color:#E5E7EB ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #47475a;
+    font-style: italic;
+    font-size: 36px;
+    height: 350px;
+}
+
+.quote-box {
+    display: flex;
+    flex-basis: 950px;
+    flex-shrink: 1;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.author {
+    display: flex;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+/* Call to action banner styling */
+.sign-up-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.sign-up-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 700px;
+    background-color: #3882F6;
+    border-radius: 8px;
+
+}
+
+.sign-up-text p{
+    margin: 0;
+
+}
+
+.sign-up-box p:nth-child(1){
+    color: #F9FAF8;
+}
+.sign-up-box p:nth-child(2){
+    color:#E5E7EB;
+    font-size: 13px;
+}
+.sign-up-box button{
+    background-color: transparent;
+    border: 1px solid #F9FAF8; 
+    border-radius: 8px;
+    color: #F9FAF8;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+/* footer */
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: flex-end;
+    align-items: center;
+    color: #E5E7EB;
+    height: 70px;
+}
